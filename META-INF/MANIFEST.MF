@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Provider of custom e4 supplier annotation
+Bundle-SymbolicName: com.vogella.e4.di.extensions
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: vogella GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.vogella.e4.di.extensions
+Service-Component: OSGI-INF/ObjectSupplier.xml
+Import-Package: javax.inject,
+ org.eclipse.e4.core.di.suppliers,
+ org.osgi.framework;version="1.7.0"
+Bundle-ActivationPolicy: lazy

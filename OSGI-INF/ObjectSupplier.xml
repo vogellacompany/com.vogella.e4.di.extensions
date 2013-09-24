@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.vogella.e4.di.allsupplier">
+   <implementation class="com.vogella.e4.di.internal.OSGiServiceObjectSupplier"/>
+   <property name="dependency.injection.annotation" type="String" value="com.vogella.e4.di.extensions.AllServices"/>
+   <service>
+      <provide interface="org.eclipse.e4.core.di.suppliers.ExtendedObjectSupplier"/>
+   </service>
+</scr:component>
