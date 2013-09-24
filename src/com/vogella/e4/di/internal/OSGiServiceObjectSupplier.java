@@ -43,6 +43,10 @@ public class OSGiServiceObjectSupplier extends ExtendedObjectSupplier {
 		if (descriptor == null) {
 			return null;
 		}
+		// Do not support tracking nor grouping
+		if (track || group) {
+			throw new IllegalArgumentException("Tracking and grouping not supported");
+		}
 
 		final Class<?> descriptorsClass = getDesiredClass(descriptor.getDesiredType());
 		if (descriptorsClass == null) {
